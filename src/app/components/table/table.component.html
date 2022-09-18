@@ -1,0 +1,16 @@
+<table>
+  <thead>
+    <ng-container
+      [ngTemplateOutlet]="header"
+      [ngTemplateOutletContext]="{ data: columns }"
+    >
+    </ng-container>
+  </thead>
+  <tbody>
+    <ng-container
+      [ngTemplateOutlet]="content"
+      [ngTemplateOutletContext]="{ data: rows }"
+    >
+    </ng-container>
+  </tbody>
+</table>

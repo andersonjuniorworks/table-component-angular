@@ -1,0 +1,10 @@
+@import '~bootstrap-icons/font/bootstrap-icons.css';
+@import './app/styles/table.css';
+
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  background-color: #0f172a;
+}

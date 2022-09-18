@@ -1,0 +1,31 @@
+<app-table>
+  <ng-template #tableHeader>
+    <tr>
+      <th class="text-center">#</th>
+      <th>Nome Completo</th>
+      <th>Contato</th>
+      <th>Email</th>
+      <th class="centered">Ações</th>
+    </tr>
+  </ng-template>
+
+  <ng-template #tableContent>
+    <tr *ngFor="let item of data; index as i">
+      <td class="text-center">{{ i + 1 }}</td>
+      <td>{{ item.name }}</td>
+      <td>{{ item.phoneNumber }}</td>
+      <td>{{ item.email }}</td>
+      <td class="centered spacing">
+        <button class="btn btn-view">
+          <i class="bi bi-eye"></i>
+        </button>
+        <button class="btn btn-edit">
+          <i class="bi bi-pencil"></i>
+        </button>
+        <button class="btn btn-delete">
+          <i class="bi bi-trash"></i>
+        </button>
+      </td>
+    </tr>
+  </ng-template>
+</app-table>
